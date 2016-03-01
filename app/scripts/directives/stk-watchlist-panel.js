@@ -40,12 +40,12 @@ angular.module('stockDogApp')
      // [6] Delete desired list and redirect to home
      $scope.deleteList = function (list) {
       WatchlistService.remove(list);
-      $location.path('/StockDog/#/dashboard');
+      $location.path('/');
      };
 
      $scope.currentList = $routeParams.listId;
      $scope.gotoList = function(listId){
-       $location.path('/StockDog/#/watchlist/' + listId);
+       $location.path('watchlist/' + listId);
      };
     }
   };
