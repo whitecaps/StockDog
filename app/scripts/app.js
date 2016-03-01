@@ -26,7 +26,7 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl'
       })
-      .when('/StockDog/watchlist/:listId', {
+      .when('/watchlist/:listId', {
         templateUrl: 'views/watchlist.html',
         controller: 'WatchlistCtrl'
       })
