@@ -22,15 +22,15 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
 
-      .when('/dashboard', {
+      .when('/StockDog/dashboard', {
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl'
       })
-      .when('/watchlist/:listId', {
+      .when('/StockDog/watchlist/:listId', {
         templateUrl: 'views/watchlist.html',
         controller: 'WatchlistCtrl'
       })
       .otherwise({
-        redirectTo: '/dashboard'
+        redirectTo: '/StockDog/dashboard'
       });
   });
